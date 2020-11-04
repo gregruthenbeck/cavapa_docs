@@ -4,7 +4,7 @@
 
 Create GitHub repository and deploy to Netlify with the following button in 1 min.
 
-[![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate)
+[![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gregruthenbeck/cavapa_docs)
 
 
 

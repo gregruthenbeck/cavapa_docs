@@ -40,5 +40,5 @@ pipenv run mkdocs gh-deploy
 
 <!-- Internal References -->
 <!-- External References -->
-[Demo site on GitHub Pages]: https://peaceiris.github.io/mkdocs-material-boilerplate/
+[Demo site on GitHub Pages]: https://github.com/gregruthenbeck/cavapa_docs.git
 [Personal access token]: https://github.com/settings/tokens

@@ -1,16 +1,16 @@
 # Project information
-site_name: 'MkDocs Material Boilerplate'
-site_description: 'MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with GitHub Actions, CircleCI, Docker, pipenv, and CI/CD'
-site_author: 'peaceiris'
-site_url: 'https://mkdocs.peaceiris.com/'
+site_name: 'CAVAPA Technical Documentation'
+site_description: 'CAVAPA: Measuring human movement in groups using video'
+site_author: 'gregruthenbeck'
+site_url: 'https://cavapa.ruthenbeck.io/'
 
 # Copyright
-copyright: '&copy; 2019 peaceiris'
+copyright: '&copy; 2020 Greg Ruthenbeck'
 
 # Repository
 repo_name: 'GitHub'
-repo_url: 'https://github.com/peaceiris/mkdocs-material-boilerplate'
-edit_uri: 'https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs_sample'
+repo_url: 'https://github.com/gregruthenbeck/CAVAPA2019'
+edit_uri: 'https://github.com/gregruthenbeck/cavapa_docs'
 
 # Configuration
 docs_dir: 'docs_sample'
@@ -27,12 +27,12 @@ theme:
     accent: 'blue'
   features:
     - tabs
-  #font:
-    #text: 'Ubuntu'
-    #code: 'Ubuntu Mono'
-  #icon:
-    #logo: 'images/logo.svg'
-  #favicon: 'assets/images/favicon.ico'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  # icon:
+  #   logo: 'images/icon'
+  # favicon: 'assets/images/favicon.ico'
 
 # Extensions
 markdown_extensions:
@@ -60,7 +60,7 @@ extra:
   manifest: 'manifest.json'
   social:
     - icon: 'fontawesome/brands/github-alt'
-      link: 'https://github.com/peaceiris'
+      link: 'https://github.com/gregruthenbeck'
     - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/piris314en'
 

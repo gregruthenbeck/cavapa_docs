@@ -10,9 +10,9 @@
 [![boost](https://img.shields.io/badge/boost-1.72-blue)](https://www.boost.org/)
 [![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019%20CE-v142-blue)](https://visualstudio.microsoft.com/vs/community/)
 ![C#](https://img.shields.io/badge/C%23-8.0-blue)
+[![OSF Project: CAVAPA](https://img.shields.io/badge/OSF.io-CAVAPA-green)](https://osf.io/zwpy5/)
 ![.Net Framework](https://img.shields.io/badge/.NET%20Framework-v4.7.2-blue)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bd50eb51-4b80-4410-a59f-06394219e7ff/deploy-status)](https://app.netlify.com/sites/cavapa-docs/deploys)
-[![OSF Project: CAVAPA](https://img.shields.io/badge/OSF.io-CAVAPA-green)](https://osf.io/zwpy5/)
 <!-- [![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/releases/latest)
 [![GitHub release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/releases) -->
 
@@ -98,7 +98,7 @@ FFmpeg -i videos/original.mpg -i cavapa_output.mp4 -filter_complex '[0:v]pad=iw*
 
 ## Documentation
 
-Documentation build using [MkDocs Material Boilerplate].
+This documentation is built using [MkDocs Material Boilerplate].
 
 [MkDocs Material Boilerplate]: https://github.com/gregruthenbeck/cavapa_docs
 

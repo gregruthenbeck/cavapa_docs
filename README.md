@@ -6,7 +6,7 @@
 ![CAVAPA Screenshot](images/cavapa.png)
 
 [![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/blob/master/LICENSE)
-[![ffmpeg](https://img.shields.io/badge/ffmpeg-v2.8.17-blue)](https://ffmpeg.org/)
+[![FFmpeg](https://img.shields.io/badge/FFmpeg-v2.8.17-blue)](https://FFmpeg.org/)
 ![C++](https://img.shields.io/badge/c%2B%2B-11-blue)
 [![boost](https://img.shields.io/badge/boost-1.72-blue)](https://www.boost.org/)
 [![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019%20CE-v142-blue)](https://visualstudio.microsoft.com/vs/community/)
@@ -19,30 +19,33 @@
 
 CAVAPA is a new method for processing video to compute a novel metric that describes the amount of physical exertion of the moving subjects within the video frame.
 
-This is part of a research project with [Greg Ruthenbeck PhD](https://ruthenbeck.io), Heidi Pasi, [Prof. Taru Lintunen](https://www.researchgate.net/profile/Taru_Lintunen), [Prof. Martin Hagger](https://sites.ucmerced.edu/martinhagger/people/martin-hagger) (and others) at [Jyväskylä University](https://www.jyu.fi/en/) (Finland).
+!!! note
+    CAVAPA's motion-metric has been validated compared with accelerometer data and manual observational scoring (5s intervals). Details will be added once the paper is published.
+
+This is part of a research project with [Greg Ruthenbeck PhD](https://ruthenbeck.io), Heidi Pasi, [Prof. Taru Lintunen](https://www.researchgate.net/profile/Taru_Lintunen), [Prof. Martin Hagger](https://sites.ucmerced.edu/martinhagger/people/martin-hagger) (and others) at [Jyväskylä University](https://www.jyu.fi/en/), Finland.
 
 This documentation and the CAVAPA source code is written and maintained by [Greg Ruthenbeck](https://ruthenbeck.io) and [contributors tba].
 
-Test data will be made available via the [CAVAPA Project page at the Open Science Foundation](https://osf.io/zwpy5/) (it is currently private pending approval).
+Test data will be made available via the [CAVAPA Project page](https://osf.io/zwpy5/) at the [Open Science Foundation](https://osf.io) (currently private pending approval).
 
 ## Abstract
 
 CAVAPA simplifies the measurement of physical activity of groups. Sports science has long used video analysis for biomechanical insights. Other methods rely on specialist hardware like accelerometers or special cameras and motion-tracking markers. CAVAPA works on any video, with no strict requirements of camera-angle, lighting conditions, or video format.
 
-Physical activity correlates with general wellbeing (Penedo and Dahn, 2005). Hence, measuring the physical activity of groups is an important tool for quantifying the effectiveness of interventions aimed at improving general wellbeing. School students are of particular interest since it is at this age that life-long habits are established, and schooling has a large opportunity to affect positive changes to attitudes and behaviors surrounding physical activity. Existing methods for measuring the physical activity of groups are varied and have limitations such as requiring specialized devices, requiring manual processing, or being complex to apply to common scenarios.
+Physical activity correlates with general wellbeing[^1]. Hence, measuring the physical activity of groups is an important tool for quantifying the effectiveness of interventions aimed at improving general wellbeing. School students are of particular interest since it is at this age that life-long habits are established, and schooling has a large opportunity to affect positive changes to attitudes and behaviors surrounding physical activity. Existing methods for measuring the physical activity of groups are varied and have limitations such as requiring specialized devices, requiring manual processing, or being complex to apply to common scenarios.
 
 We are in the process of publishing details of a study in which CAVAPA results are compared with accelerometer data and observational data (manual observational measures). Once the publication is available we will add a link to it here.
 
 ## Video Pre-Processing
 
-In this early release version of CAVAPA, video must be pre-conditioned using FFMPEG before processing with CAVAPA. Later versions of CAVAPA will process video directly.
+In this early release version of CAVAPA, video must be pre-conditioned using FFmpeg before processing with CAVAPA. Later versions of CAVAPA will process video directly.
 
 ### Anti-aliasing
 
-Many video cameras use interlaced video compression codecs. This will reduce the accuracy of CAVAPA if it is not removed. Fortunately, decoding the frames of the video can be done in [FFmpeg](https://ffmpeg.org/) with some additional command-line parameters via the [YADIF - Yet Another De-Interlacing Filter](http://avisynth.nl/index.php/Yadif).
+Many video cameras use interlaced video compression codecs. This will reduce the accuracy of CAVAPA if it is not removed. Fortunately, decoding the frames of the video can be done in [FFmpeg](https://FFmpeg.org/) with some additional command-line parameters via the [YADIF - Yet Another De-Interlacing Filter](http://avisynth.nl/index.php/Yadif).
 
 ```sh
-ffmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
+FFmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
 ```
 
 | <img src="images/ball_drop_alias_stripes.png" alt="aliase striping" style="height:200px;"/> | <img src="images/ball_drop_anti-aliased.png" alt="anti-aliased" style="height:200px;"/> |
@@ -54,21 +57,21 @@ ffmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
 To simplify calculations, all of our videos were processed at 25fps. Videos can be de-interlaced and converted to 25fps with a single command in FFmpeg. The command below also re-encodes the video using the HEVC codec with NVidia's GPU accelerated encoding for smaller files and minimal picture degradation.
 
 ```sh
-ffmpeg -i in.mp4 -c:v hevc_nvenc -vf yadif=parity=auto -r:v 25 -c:a copy out.mp4
+FFmpeg -i in.mp4 -c:v hevc_nvenc -vf yadif=parity=auto -r:v 25 -c:a copy out.mp4
 ```
 
 If only 25fps conversion is needed, use this command:
 
 ```sh
-ffmpeg -i in.mp4 -r:v 25 -c:a copy out.mp4
+FFmpeg -i in.mp4 -r:v 25 -c:a copy out.mp4
 ```
 
-### Convert video into frame-images
+### Convert video into images
 
 CAVAPA currently requires a folder containing only images as input. To convert a video into the required format, use the following command in FFmpeg.
 
 ```sh
-ffmpeg -i my_video.mp4 -q:v 1 -qmin 1 -qmax 1 ./frames/my_video_%06d.jpg
+FFmpeg -i my_video.mp4 -q:v 1 -qmin 1 -qmax 1 ./frames/my_video_%06d.jpg
 ```
 
 !!! info
@@ -81,7 +84,7 @@ Since CAVAPA processes videos as a squence of images (aka. frames), the output o
 ### Encoding CAVAPA output frames into a video
 
 ```sh
-ffmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
+FFmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
 ```
 
 ### Combining Videos Side-by-Side
@@ -91,7 +94,7 @@ ffmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
 Test videos can be generated that show the input video alongside the CAVAPA-processed video.
 
 ```sh
-ffmpeg -i videos/original.mpg -i cavapa_output.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' -map [vid] output-sxs.mp4
+FFmpeg -i videos/original.mpg -i cavapa_output.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' -map [vid] output-sxs.mp4
 ```
 
 ## Documentation
@@ -132,3 +135,6 @@ inv serve --config-file cavapa_docs.yml -d localhost:8008
 ## About Author
 
 - [gregruthenbeck Homepage](https://ruthenbeck.io/)
+
+[^1]:
+    Penedo, F.J., Dahn, J.R., 2005. [Exercise and well-being: a review of mental and physical health benefits associated with physical activity](https://journals.lww.com/co-psychiatry/Abstract/2005/03000/Exercise_and_well_being__a_review_of_mental_and.13.aspx). Curr. Opin. Psychiatry 18, 189–193.

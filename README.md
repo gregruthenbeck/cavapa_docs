@@ -103,18 +103,21 @@ Documentation build using [MkDocs Material Boilerplate].
 
 [MkDocs Material Boilerplate]: https://github.com/gregruthenbeck/cavapa_docs
 
-## Quick start
+### Quick start
 
 ```sh
 git clone https://github.com/gregruthenbeck/cavapa_docs.git
-cd mkdocs-material-boilerplate
+cd cavapa_docs
 pipenv sync --dev
 pipenv shell
 inv serve --config-file cavapa_docs.yml -d localhost:8008
 ```
 
-## Links
+### Dependencies
 
+- Python 3.6 or higher
+- pip
+- pipenv
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
 - [squidfunk/mkdocs-material: A Material Design theme for MkDocs]
 

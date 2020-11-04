@@ -1,7 +1,7 @@
 <h1 align="center">
 <!-- <img src="images/icon.svg" alt="CAVAPA Icon" width="80"><br> -->
-<b>CAVAPA</b><br>Measure the Motion of Groups from Video
-![CAVAPA Screenshot](images/cavapa.png)
+<b>CAVAPA</b><br>Measure the Motion of Groups from Video<br>
+<img src="images/cavapa.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 </h1>
 
 [![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/blob/master/LICENSE)

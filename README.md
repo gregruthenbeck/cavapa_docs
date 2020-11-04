@@ -27,7 +27,7 @@ Test data will be made available via the [CAVAPA Project page at the Open Scienc
 
 ## Abstract
 
-CAVAPA aims to simplify the measurement of physical activity of groups. Sports science has long used video analysis for biomechanical insights. Other methods rely on specialist hardware like accelerometers or special cameras and motion-tracking markers. CAVAPA works on any video, with no strict requirements of camera-angle, lighting conditions, or video format.
+CAVAPA simplifies the measurement of physical activity of groups. Sports science has long used video analysis for biomechanical insights. Other methods rely on specialist hardware like accelerometers or special cameras and motion-tracking markers. CAVAPA works on any video, with no strict requirements of camera-angle, lighting conditions, or video format.
 
 Physical activity correlates with general wellbeing (Penedo and Dahn, 2005). Hence, measuring the physical activity of groups is an important tool for quantifying the effectiveness of interventions aimed at improving general wellbeing. School students are of particular interest since it is at this age that life-long habits are established, and schooling has a large opportunity to affect positive changes to attitudes and behaviors surrounding physical activity. Existing methods for measuring the physical activity of groups are varied and have limitations such as requiring specialized devices, requiring manual processing, or being complex to apply to common scenarios.
 

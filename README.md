@@ -1,9 +1,8 @@
 <h1 align="center">
 <!-- <img src="images/icon.svg" alt="CAVAPA Icon" width="80"><br> -->
 <b>CAVAPA</b><br>Measure the Motion of Groups from Video
-</h1>
-
 ![CAVAPA Screenshot](images/cavapa.png)
+</h1>
 
 [![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/blob/master/LICENSE)
 [![FFmpeg](https://img.shields.io/badge/FFmpeg-v2.8.17-blue)](https://FFmpeg.org/)

@@ -35,11 +35,32 @@ Physical activity correlates with general wellbeing[^1]. Hence, measuring the ph
 
 We are in the process of publishing details of a study in which CAVAPA results are compared with accelerometer data and observational data (manual observational measures, using the [VOST tool](video-observational-scoring)). Once the publication is available we will add a link to it here.
 
+## Quickstart
+
+CAVAPA processes video to produce a data-series that is a measure of the amount of physical activity of persons in the video. To begin, check for interlacing by pausing the video: 
+
+1. Are there [horizontal bands that indicate interlacing video compression](#interlaced_video) is used?<br>
+If Yes, then:<br>
+Use FFmpeg to convert the video to use a non-interlaced compression:<br>
+ `ffmpeg -i video_interlaced.mp4 -vf yadif=parity=auto video_out.mp4`<br>
+This uses the YADIF (Yet Another DeInterlacing Filter) plugin.
+1. Convert video to image frames using ffmpeg.<br>
+ `ffmpeg -i video.mpg -q:v 1 -qmin 1 -qmax 1 ./frames/video-%06d.jpg`
+1. Run CAVAPA. It will process the images and create movement images and a CSV data file (containing the movement-measure for each frame of the video).<br>
+ `cavapa -i ./frames -o ./cavapa_output`
+1. Optionally, convert the CAVAPA output images into a video using FFmpeg.<br>
+ `ffmpeg -i ./cavapa_output/movement-%06d.jpg movement.mp4`
+
+
+## Technical Summary
+
+CAVAPA is a command-line executable that is written in C++ for Microsoft Windows™. CAVAPA uses the following software libraries: [Microsoft Parallel Patterns Library (PPL)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=msvc-172), [Boost C++ 1.72](https://www.boost.org/) (`boost::filesystem`, and `boost::program_options`), [Free Image](https://freeimage.sourceforge.io) & [Free Image Plus](https://freeimage.sourceforge.io). The source code is a single file that is compiled using Microsoft Visual Studio (2019). System libraries from the Windows 10 SDK (10.0.17763.0) use the v142 platform toolset. The git repository contains additional projects for charting in C# and processing accelerometer data (DataConverterCpp.vcxproj). The CAVAPA executable is built using Cavapa.vcxproj. The source code is freely available (open source) for use and modification. It has been structured for simplicity and reasonable performance.
+
 ## Video Pre-Processing
 
 In this early release version of CAVAPA, video must be pre-conditioned using FFmpeg before processing with CAVAPA. Later versions of CAVAPA will process video directly.
 
-### Anti-aliasing
+### Interlaced Video
 
 Many video cameras use interlaced video compression codecs. This will reduce the accuracy of CAVAPA if it is not removed. Fortunately, decoding the frames of the video can be done in [FFmpeg](https://FFmpeg.org/) with some additional command-line parameters via the [YADIF - Yet Another De-Interlacing Filter](http://avisynth.nl/index.php/Yadif).
 

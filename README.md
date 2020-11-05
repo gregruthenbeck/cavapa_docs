@@ -44,7 +44,7 @@ In this early release version of CAVAPA, video must be pre-conditioned using FFm
 Many video cameras use interlaced video compression codecs. This will reduce the accuracy of CAVAPA if it is not removed. Fortunately, decoding the frames of the video can be done in [FFmpeg](https://FFmpeg.org/) with some additional command-line parameters via the [YADIF - Yet Another De-Interlacing Filter](http://avisynth.nl/index.php/Yadif).
 
 ```sh
-FFmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
+ffmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
 ```
 
 | <img src="images/ball_drop_interlace_stripes.png" alt="interlacing striping" style="height:200px;"/> | <img src="images/ball_drop_de-interlaced.png" alt="de-interlaced" style="height:200px;"/> |
@@ -56,13 +56,13 @@ FFmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
 To simplify calculations, all of our videos were processed at 25fps. Videos can be de-interlaced and converted to 25fps with a single command in FFmpeg. The command below also re-encodes the video using the HEVC codec with NVidia's GPU accelerated encoding for smaller files and minimal picture degradation.
 
 ```sh
-FFmpeg -i in.mp4 -c:v hevc_nvenc -vf yadif=parity=auto -r:v 25 -c:a copy out.mp4
+ffmpeg -i in.mp4 -c:v hevc_nvenc -vf yadif=parity=auto -r:v 25 -c:a copy out.mp4
 ```
 
 If only 25fps conversion is needed, use this command:
 
 ```sh
-FFmpeg -i in.mp4 -r:v 25 -c:a copy out.mp4
+ffmpeg -i in.mp4 -r:v 25 -c:a copy out.mp4
 ```
 
 ### Convert video into images
@@ -70,7 +70,7 @@ FFmpeg -i in.mp4 -r:v 25 -c:a copy out.mp4
 CAVAPA currently requires a folder containing only images as input. To convert a video into the required format, use the following command in FFmpeg.
 
 ```sh
-FFmpeg -i my_video.mp4 -q:v 1 -qmin 1 -qmax 1 ./frames/my_video_%06d.jpg
+ffmpeg -i my_video.mp4 -q:v 1 -qmin 1 -qmax 1 ./frames/my_video_%06d.jpg
 ```
 
 !!! info
@@ -83,7 +83,7 @@ Since CAVAPA processes videos as a squence of images (aka. frames), the output o
 ### Encoding CAVAPA output frames into a video
 
 ```sh
-FFmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
+ffmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
 ```
 
 ### Combining Videos Side-by-Side
@@ -93,7 +93,7 @@ FFmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
 Test videos can be generated that show the input video alongside the CAVAPA-processed video.
 
 ```sh
-FFmpeg -i videos/original.mpg -i cavapa_output.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' -map [vid] output-sxs.mp4
+ffmpeg -i videos/original.mpg -i cavapa_output.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' -map [vid] output-sxs.mp4
 ```
 
 ## Documentation

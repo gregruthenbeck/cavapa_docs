@@ -17,14 +17,16 @@ Observational scoring (manual scoring) of metrics from video is very time-consum
 !!! note
     VOST allows data to be sorted thereby allowing easy comparison of parts of the video that are given the same score. Hence, it is easy to check if metric values are assigned consistently.
 
-This tool is currently Windows only. It is written in C# and therefore it may be possible to use [Mono](https://www.mono-project.com/) to compile it for other operating systems. The source code is part of the CAVAPA2019 github repo. 
+This tool is currently Windows only. It is written in C# and therefore it may be possible to use [Mono](https://www.mono-project.com/) to compile it for other operating systems. The source code is part of the CAVAPA2019 github repo.
 
 ```sh
 git clone https://github.com/gregruthenbeck/CAVAPA2019
 cd CAVAPA2019/Cavapa_Observation_Score
 ```
 
-Then open `Cavapa_Observation_Score.csproj` in [Microsoft Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/community/) or equivalent ([VS Code](https://code.visualstudio.com/) might work).
+Then open `Cavapa_Observation_Score.csproj` in [Microsoft Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/community/) or equivalent ([VS Code](https://code.visualstudio.com/) might work). 
+
+If you do not want to build the application from source code: Install the [.Net Framework 4.7.2](https://support.microsoft.com/en-us/help/4054530/microsoft-net-framework-4-7-2-offline-installer-for-windows), and use the [VOST pre-compiled binary (.zip)](dist/CAVAPA-VOST-ObservationScore-v1.zip).
 
 ## Video Pre-Processing
 

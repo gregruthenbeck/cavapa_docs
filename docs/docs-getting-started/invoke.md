@@ -24,7 +24,7 @@ Serving on [localhost:8000](http://localhost:8000)
 # set IP and port
 inv serve --dev-addr 'localhost:5000'
 # set config file
-inv serve --config-file ./mkdocs-sample.yml
+inv serve --config-file ./cavapa_docs.yml
 ```
 
 

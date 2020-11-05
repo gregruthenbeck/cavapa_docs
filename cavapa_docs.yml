@@ -13,7 +13,7 @@ repo_url: 'https://github.com/gregruthenbeck/CAVAPA2019'
 edit_uri: 'https://github.com/gregruthenbeck/cavapa_docs'
 
 # Configuration
-docs_dir: 'docs_sample'
+docs_dir: 'docs'
 theme:
   name: 'material'
   language: 'en'
@@ -67,21 +67,22 @@ extra:
 # Page tree
 nav:
   - 'Home': 'index.md'
-  - 'Material for MkDocs': 'material-for-mkdocs.md'
-  - 'Getting started':
-    - 'Download boilerplate': 'getting-started/download-boilerplate.md'
-    - 'pipenv': 'getting-started/pipenv.md'
-    - 'invoke': 'getting-started/invoke.md'
-    - 'Docker': 'getting-started/docker.md'
-    - 'pip': 'getting-started/pip.md'
-  - 'Hosting and Deployment':
-    - 'Combinations': 'hosting-and-deployment/combinations.md'
-    - 'Netlify': 'hosting-and-deployment/netlify.md'
-    - 'GitHub Pages': 'hosting-and-deployment/github-pages.md'
-    - 'GitLab Pages': 'hosting-and-deployment/gitlab-pages.md'
-    - 'AWS Amplify Console': 'hosting-and-deployment/aws-amplify-console.md'
-  - 'Extensions':
-    - 'MathJax': 'extensions/mathjax.md'
-    - 'Code Hilite': 'extensions/code-hilite.md'
-    - 'Footnote': 'extensions/footnote.md'
-  - 'License': 'license.md'
+  - 'Video Observational Scoring': 'video-observational-scoring.md'
+  - 'About the Documentation':
+    - 'Material for MkDocs': 'material-for-mkdocs.md'
+    - 'Getting started':
+      - 'Download boilerplate': 'docs-getting-started/download-boilerplate.md'
+      - 'pipenv': 'docs-getting-started/pipenv.md'
+      - 'invoke': 'docs-getting-started/invoke.md'
+      - 'Docker': 'docs-getting-started/docker.md'
+      - 'pip': 'docs-getting-started/pip.md'
+    - 'Hosting and Deployment':
+      - 'Combinations': 'docs-hosting-and-deployment/combinations.md'
+      - 'Netlify': 'docs-hosting-and-deployment/netlify.md'
+      - 'GitHub Pages': 'docs-hosting-and-deployment/github-pages.md'
+      - 'GitLab Pages': 'docs-hosting-and-deployment/gitlab-pages.md'
+      - 'AWS Amplify Console': 'docs-hosting-and-deployment/aws-amplify-console.md'
+    - 'Extensions':
+      - 'MathJax': 'docs-extensions/mathjax.md'
+      - 'Code Hilite': 'docs-extensions/code-hilite.md'
+      - 'Footnote': 'docs-extensions/footnote.md'

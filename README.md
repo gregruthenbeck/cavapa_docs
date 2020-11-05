@@ -33,7 +33,7 @@ CAVAPA simplifies the measurement of physical activity of groups. Sports science
 
 Physical activity correlates with general wellbeing[^1]. Hence, measuring the physical activity of groups is an important tool for quantifying the effectiveness of interventions aimed at improving general wellbeing. Existing methods for measuring the physical activity of groups are varied and have limitations such as requiring specialized devices, requiring manual processing, or being complex to apply to common scenarios.
 
-We are in the process of publishing details of a study in which CAVAPA results are compared with accelerometer data and observational data (manual observational measures). Once the publication is available we will add a link to it here.
+We are in the process of publishing details of a study in which CAVAPA results are compared with accelerometer data and observational data (manual observational measures, using the [VOST tool](video-observational-scoring)). Once the publication is available we will add a link to it here.
 
 ## Video Pre-Processing
 

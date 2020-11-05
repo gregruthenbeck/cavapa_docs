@@ -53,10 +53,12 @@ This uses the YADIF (Yet Another DeInterlacing Filter) plugin.
 
 ## Command-line Arguments
 
+The `cavapa.exe` application expects the following arguments. Only the `input folder` parameter is required (all other parameters have defaults and are therefore optional).
+
 | Arg | Type (default) | Description |
 | --- | -------------- | ----------- |
 | --help, -h | | produce help message |
-| --inputFolder, -i | `string` | input folder containing JPG files of video frames |
+| * --inputFolder, -i | `string` | input folder containing JPG files of video frames |
 | --outputFolder, -o | `string` | output folder (optional) |
 | --debugFolder, -t | `string` | debug output folder (optional) |
 | --dbgOutInterval, -u | `int` (0) | number of frames skipped between debug output |

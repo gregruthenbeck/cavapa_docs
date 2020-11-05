@@ -67,13 +67,13 @@ The `cavapa.exe` application expects the following arguments. Only the `input fo
 
 ## Technical Summary
 
-CAVAPA is a command-line executable that is written in C++ for Microsoft Windows™. CAVAPA uses the following software libraries: [Microsoft Parallel Patterns Library (PPL)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=msvc-172), [Boost C++ 1.72](https://www.boost.org/) (`boost::filesystem`, and `boost::program_options`), [Free Image](https://freeimage.sourceforge.io) & [Free Image Plus](https://freeimage.sourceforge.io). The source code is a single file that is compiled using Microsoft Visual Studio (2019). System libraries from the Windows 10 SDK (10.0.17763.0) use the v142 platform toolset. The git repository contains additional projects for charting in C# and processing accelerometer data (DataConverterCpp.vcxproj). The CAVAPA executable is built using Cavapa.vcxproj. The source code is freely available (open source) for use and modification. It has been structured for simplicity and reasonable performance.
+CAVAPA is a command-line executable that is written in C++ for Microsoft Windows™. CAVAPA uses the following software libraries: [Microsoft Parallel Patterns Library (PPL)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=msvc-172), [Boost C++ 1.72](https://www.boost.org/) (`boost::filesystem`, and `boost::program_options`), [Free Image](https://freeimage.sourceforge.io) & [Free Image Plus](https://freeimage.sourceforge.io). The source code is a single file that is compiled using Microsoft Visual Studio (2019). System libraries from the Windows 10 SDK (10.0.17763.0) use the v142 platform toolset. The git repository contains [additional projects](#additional_projects_in_github) for charting in C# and processing accelerometer data. The source code is freely available (open source) for use and modification. It has been structured for simplicity and performance.
 
 ## Build Set-up
 
 Compilation of the CAVAPA binary/executable requires that the following environment variables are properly set: `FREEIMAGEDIR`, `BOOSTDIR`.
 
-## Other Projects in GitHub
+## Additional Projects in GitHub
 
 The [GitHub code repository](https://github.com/gregruthenbeck/CAVAPA2019/) contains the following projects.
 

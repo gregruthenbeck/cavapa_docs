@@ -47,9 +47,9 @@ Many video cameras use interlaced video compression codecs. This will reduce the
 FFmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
 ```
 
-| <img src="images/ball_drop_alias_stripes.png" alt="aliase striping" style="height:200px;"/> | <img src="images/ball_drop_anti-aliased.png" alt="anti-aliased" style="height:200px;"/> |
+| <img src="images/ball_drop_interlace_stripes.png" alt="interlacing striping" style="height:200px;"/> | <img src="images/ball_drop_de-interlaced.png" alt="de-interlaced" style="height:200px;"/> |
 | ----------------------------------------------------- | ----------------------------------- |
-| Aliasing causes striping                              | Properly decoded anti-aliased frame |
+| Interlacing causes striping                              | Properly decoded de-interlaced frame |
 
 ### Consistent Frame-rate
 

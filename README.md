@@ -51,6 +51,19 @@ This uses the YADIF (Yet Another DeInterlacing Filter) plugin.
 1. Optionally, convert the CAVAPA output images into a video using FFmpeg.<br>
  `ffmpeg -i ./cavapa_output/movement-%06d.jpg movement.mp4`
 
+## Command-line Arguments
+
+| Arg | Type (default) | Description |
+| --- | -------------- | ----------- |
+| --help, -h | | produce help message |
+| --inputFolder, -i | `string` | input folder containing JPG files of video frames |
+| --outputFolder, -o | `string` | output folder (optional) |
+| --debugFolder, -t | `string` | debug output folder (optional) |
+| --dbgOutInterval, -u | `int` (0) | number of frames skipped between debug output |
+| --bgThreshold, -g | `float` (48.0f) | used to identify tracked pixels, lower values will be noisier |
+| --parallelChunkSize, -p | `int` (128) | the number of files processed in parallel |
+| --blurIterations, -b | `int` (0) | number of times the blur is applied |
+| --csvDataFilenameOut, -d | `string` ("data.csv") | output CSV data filename (path) |
 
 ## Technical Summary
 

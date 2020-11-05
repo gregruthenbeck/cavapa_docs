@@ -39,11 +39,9 @@ We are in the process of publishing details of a study in which CAVAPA results a
 
 CAVAPA processes video to produce a data-series that is a measure of the amount of physical activity of persons in the video. To begin, check for interlacing by pausing the video: 
 
-1. Are there [horizontal bands that indicate interlacing video compression](#interlaced_video) is used?<br>
-If Yes, then:<br>
+1. Are there [horizontal bands that indicate interlacing](#interlaced_video) video compression is used?<br>
 Use FFmpeg to convert the video to use a non-interlaced compression:<br>
- `ffmpeg -i video_interlaced.mp4 -vf yadif=parity=auto video_out.mp4`<br>
-This uses the YADIF (Yet Another DeInterlacing Filter) plugin.
+ `ffmpeg -i video_interlaced.mp4 -vf yadif=parity=auto video_out.mp4`
 1. Convert video to image frames using ffmpeg.<br>
  `ffmpeg -i video.mpg -q:v 1 -qmin 1 -qmax 1 ./frames/video-%06d.jpg`
 1. Run CAVAPA. It will process the images and create movement images and a CSV data file (containing the movement-measure for each frame of the video).<br>

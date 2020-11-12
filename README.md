@@ -75,18 +75,18 @@ Compilation of the CAVAPA binary/executable requires that the following environm
 
 ## Additional Projects in GitHub
 
-The [GitHub code repository](https://github.com/gregruthenbeck/CAVAPA2019/) contains the following projects.
+The [GitHub code repository](https://github.com/gregruthenbeck/CAVAPA2020/) contains the following projects.
 
 | Project | Type | Description |
 | ------- | ---- | ----------- |
-| Cavapa_Observation_Score | `C#` | Video observation (manual) scoring helper tool ([more...](./video-observational-scoring/)) |
+| Cavapa | `C++` | The main CAVAPA application |
+| VOST-Video_Observation_Score | `C#` | Video observation (manual) scoring helper tool ([more...](./video-observational-scoring/)) |
 | Cavapa_dotNet_Prototype | `C#` | An early version of CAVAPA (WinForms GUI) |
 | DataViewer | `C#` | Experimental: Charting/plotting of data |
 | Cavapa_dotNet_Batch_Processor | `C#` | An early version of CAVAPA |
 | DataConverterCpp | `C++` | Used to process accelerometer data (synchronization) |
-| GregTrackCpp | `C++` | The main CAVAPA application |
 
-All of the projects can be opened from the Visual Studio Solution file `GregTrackCpp.sln`.
+All of the projects can be opened from the Visual Studio Solution file `Cavapa.sln`.
 
 ## Video Pre-Processing
 

@@ -19,11 +19,11 @@ Observational scoring (manual scoring) of metrics from video is very time-consum
 
 ## Build Instructions
 
-This tool is currently Windows only. It is written in C# and therefore it may be possible to use [Mono](https://www.mono-project.com/) to compile it for other operating systems. The source code is part of the CAVAPA2019 github repo.
+This tool is currently Windows only. It is written in C# and therefore it may be possible to use [Mono](https://www.mono-project.com/) to compile it for other operating systems. The source code is part of the CAVAPA2020 github repo.
 
 ```sh
-git clone https://github.com/gregruthenbeck/CAVAPA2019
-cd CAVAPA2019/Cavapa_Observation_Score
+git clone https://github.com/gregruthenbeck/CAVAPA2020
+cd CAVAPA2020/Cavapa_Observation_Score
 ```
 
 Then open `Cavapa_Observation_Score.csproj` in [Microsoft Visual Studio 2019 Community Edition](https://visualstudio.microsoft.com/vs/community/) or equivalent ([VS Code](https://code.visualstudio.com/) might work). 

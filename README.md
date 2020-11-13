@@ -25,7 +25,7 @@ This is part of a research project with [Greg Ruthenbeck PhD](https://ruthenbeck
 
 This documentation and the CAVAPA source code is written and maintained by [Greg Ruthenbeck](https://ruthenbeck.io) and [contributors tba].
 
-Test data will be made available via the [CAVAPA Project page](https://osf.io/zwpy5/) at the [Open Science Foundation](https://osf.io) (currently private pending approval).
+Test data is available via the [CAVAPA Project page](https://osf.io/zwpy5/) at the [Open Science Foundation](https://osf.io). This includes: video samples (input and output), accelerometer data, heart-rate monitor data for all participants of the validation study.
 
 ## Abstract
 

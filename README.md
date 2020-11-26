@@ -1,6 +1,7 @@
 <h1 align="center">
-<!-- <img src="images/icon.svg" alt="CAVAPA Icon" width="80"><br> -->
-<b>CAVAPA</b><br>Measure the Motion of Groups from Video<br>
+<img src="images/cavapa_icon.svg" alt="CAVAPA Icon" width="80" style="margin-left: 32px; border-radius: 4px; padding: 0px 6px 2px 6px; background: #999;"><br>
+<b>CAVAPA</b><br>
+Measure the Motion of Groups from Video<br>
 <img src="images/cavapa.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 </h1>
 

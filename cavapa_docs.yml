@@ -30,9 +30,9 @@ theme:
   font:
     text: 'Ubuntu'
     code: 'Ubuntu Mono'
-  # icon:
-  #   logo: 'images/icon'
-  # favicon: 'assets/images/favicon.ico'
+  logo: 'icon.svg'
+  icon:
+    favicon: 'images/favicon.ico'
 
 # Extensions
 markdown_extensions:

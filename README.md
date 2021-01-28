@@ -36,6 +36,15 @@ Physical activity correlates with general wellbeing[^1]. Hence, measuring the ph
 
 We are in the process of publishing details of a study in which CAVAPA results are compared with accelerometer data and observational data (manual observational measures, using the [VOST tool](video-observational-scoring)). Once the publication is available we will add a link to it here.
 
+## Installation
+
+<img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
+
+* [CAVAPA version 1.0.0.75 (latest) zip](https://osf.io/dywq4/download) [updated 28.1.21]
+* [CAVAPA version 1.0.0.75 (latest) Windows Installer msi](https://osf.io/zbehm/download) [updated 28.1.21]
+
+This version works directly on video files. The documentation below is out of date (28.1.21). There is no need to do any processing of the video into images.
+
 ## Quickstart
 
 CAVAPA processes video to produce a data-series that is a measure of the amount of physical activity of persons in the video. To begin, check for interlacing by pausing the video: 

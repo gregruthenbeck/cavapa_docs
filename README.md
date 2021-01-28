@@ -89,12 +89,8 @@ The [GitHub code repository](https://github.com/gregruthenbeck/cavapa/) contains
 
 | Project | Type | Description |
 | ------- | ---- | ----------- |
-| Cavapa | `C++` | The main CAVAPA application |
-| VOST-Video_Observation_Score | `C#` | Video observation (manual) scoring helper tool ([more...](./video-observational-scoring/)) |
-| Cavapa_dotNet_Prototype | `C#` | An early version of CAVAPA (WinForms GUI) |
-| DataViewer | `C#` | Experimental: Charting/plotting of data |
-| Cavapa_dotNet_Batch_Processor | `C#` | An early version of CAVAPA |
-| DataConverterCpp | `C++` | Used to process accelerometer data (synchronization) |
+| Cavapa | `C#` | The main CAVAPA application |
+| CavapaInstaller | `C#` | The setup (.msi) application |
 
 All of the projects can be opened from the Visual Studio Solution file `Cavapa.sln`.
 

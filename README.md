@@ -40,8 +40,8 @@ We are in the process of publishing details of a study in which CAVAPA results a
 
 <img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 
-* [CAVAPA version 1.0.0.75 (latest) zip](https://osf.io/dywq4/download) 53.7MB [updated 28.1.21]
-* [CAVAPA version 1.0.0.75 (latest) Windows Installer msi](https://osf.io/zbehm/download) 56.7MB [updated 28.1.21]
+* [CAVAPA version 1.0.0.75 (latest) zip](https://github.com/gregruthenbeck/cavapa/releases/download/1.0.0.75/CAVAPAv1.0.0.75.zip) 53.7MB [updated 28.1.21]
+* [CAVAPA version 1.0.0.75 (latest) Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/1.0.0.75/CavapaInstaller-v1.0.0.75.msi) 56.7MB [updated 28.1.21]
 
 This version works directly on video files. The documentation below is out of date (28.1.21). There is no need to do any processing of the video into images.
 

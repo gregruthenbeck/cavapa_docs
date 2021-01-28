@@ -85,7 +85,7 @@ Compilation of the CAVAPA binary/executable requires that the following environm
 
 ## Additional Projects in GitHub
 
-The [GitHub code repository](https://github.com/gregruthenbeck/CAVAPA2020/) contains the following projects.
+The [GitHub code repository](https://github.com/gregruthenbeck/cavapa/) contains the following projects.
 
 | Project | Type | Description |
 | ------- | ---- | ----------- |

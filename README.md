@@ -7,15 +7,11 @@ Measure the Motion of Groups from Video<br>
 
 [![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/blob/master/LICENSE)
 [![FFmpeg](https://img.shields.io/badge/FFmpeg-v2.8.17-blue)](https://FFmpeg.org/)
-![C++](https://img.shields.io/badge/c%2B%2B-14-blue)
-[![boost](https://img.shields.io/badge/boost-1.72-blue)](https://www.boost.org/)
 [![Visual Studio 2019](https://img.shields.io/badge/Visual%20Studio%202019%20CE-v142-blue)](https://visualstudio.microsoft.com/vs/community/)
 ![C#](https://img.shields.io/badge/C%23-8.0-blue)
 [![OSF Project: CAVAPA](https://img.shields.io/badge/OSF.io-CAVAPA-green)](https://osf.io/zwpy5/)
 ![.Net Framework](https://img.shields.io/badge/.NET%20Framework-v4.7.2-blue)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bd50eb51-4b80-4410-a59f-06394219e7ff/deploy-status)](https://app.netlify.com/sites/cavapa-docs/deploys)
-<!-- [![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/releases/latest)
-[![GitHub release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/releases) -->
 
 CAVAPA is a new method for processing video to compute a novel metric that describes the amount of physical exertion of the moving subjects within the video frame.
 
@@ -54,7 +50,7 @@ In summary, the indoor test resulted in a ~0.75 correlation with manually-observ
 
 This version works directly on video files. The documentation below is out of date (28.1.21). There is no need to do any processing of the video into images.
 
-## Quickstart
+<!-- ## Quickstart
 
 CAVAPA processes video to produce a data-series that is a measure of the amount of physical activity of persons in the video. To begin, check for interlacing by pausing the video: 
 
@@ -101,11 +97,11 @@ The [GitHub code repository](https://github.com/gregruthenbeck/cavapa/) contains
 | Cavapa | `C#` | The main CAVAPA application |
 | CavapaInstaller | `C#` | The setup (.msi) application |
 
-All of the projects can be opened from the Visual Studio Solution file `Cavapa.sln`.
+All of the projects can be opened from the Visual Studio Solution file `Cavapa.sln`. -->
 
 ## Video Pre-Processing
 
-In this early release version of CAVAPA, video must be pre-conditioned using FFmpeg before processing with CAVAPA. Later versions of CAVAPA will process video directly.
+It may be necessary to pre-process video in order to garauntee the best-possible output from CAVAPA.
 
 ### Interlaced Video
 

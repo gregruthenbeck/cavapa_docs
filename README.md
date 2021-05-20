@@ -20,7 +20,7 @@ Measure the Motion of Groups from Video<br>
 CAVAPA is a new method for processing video to compute a novel metric that describes the amount of physical exertion of the moving subjects within the video frame.
 
 !!! note
-    CAVAPA's motion-metric has been validated compared with accelerometer data and manual observational scoring (5s intervals). Details will be added once the paper is published.
+    CAVAPA's motion-metric has been validated compared with HR + accelerometer data and manual observational scoring. Full details will be added once the paper is published. In the meantime, see the [Quantitative Validation](#QuantitativeValidation) section.
 
 This is part of a research project with [Greg Ruthenbeck PhD](https://ruthenbeck.io), Heidi Pasi, [Prof. Taru Lintunen](https://www.researchgate.net/profile/Taru_Lintunen), [Prof. Martin Hagger](https://sites.ucmerced.edu/martinhagger/people/martin-hagger) (and others) at [Jyväskylä University](https://www.jyu.fi/en/), Finland.
 

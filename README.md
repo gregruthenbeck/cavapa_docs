@@ -36,6 +36,15 @@ Physical activity correlates with general wellbeing[^1]. Hence, measuring the ph
 
 We are in the process of publishing details of a study in which CAVAPA results are compared with accelerometer data and observational data (manual observational measures, using the [VOST tool](video-observational-scoring)). Once the publication is available we will add a link to it here.
 
+## Quantitative Validation
+
+CAVAPA has been compared with other methods of estimating/measuring physical-activity-levels for an indoor and an outdoor video. The data analyses were conducted using a Python [Jupyter Notebook](https://jupyter.org/). The data-analyses compare manually-observed scoring, accelerometers, hear-rate monitors, with CAVAPA output.
+
+- CAVAPA Validation Data Analysis [source code on GitHub](https://github.com/gregruthenbeck/cavapa-data)
+- CAVAPA Validation Data Analysis live Jupyter Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gregruthenbeck/cavapa-data/HEAD?filepath=cavapa_data_jupyter_notebook.ipynb) on [binder.org](https://binder.org))
+
+In summary, the indoor test resulted in a ~0.75 correlation with manually-observed scores of physical activity, and the outdoor test a ~0.65 correlation. A subjective "eye-balling" of the time-series shows that physical-activity is measured by CAVAPA and is arguably better than manual observation (much easier and could actually be more accurate than other measures).
+
 ## Installation
 
 <img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">

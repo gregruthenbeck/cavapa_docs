@@ -17,6 +17,12 @@ Observational scoring (manual scoring) of metrics from video is very time-consum
 !!! note
     VOST allows data to be sorted thereby allowing easy comparison of parts of the video that are given the same score. Hence, it is easy to check if metric values are assigned consistently.
 
+## VOST Windows App
+
+A [Windows App version of VOST](https://www.microsoft.com/store/productId/9N0L24XXLZ7W) has been published on the Windows App Store and is available for free. This version enables the user to place colored markers and easily save the count of the markers for each time interval.
+
+![VOST Windows App](images/vost-windows-app.png)
+
 ## Build Instructions
 
 This tool is currently Windows only. It is written in C# and therefore it may be possible to use [Mono](https://www.mono-project.com/) to compile it for other operating systems. The source code is part of the CAVAPA2020 github repo.

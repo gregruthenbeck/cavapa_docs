@@ -45,7 +45,7 @@ In summary, the indoor test resulted in a ~0.75 correlation with manually-observ
 
 <img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 
-[CAVAPA version 1.0.85 (latest) Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB
+[CAVAPA version 1.0.81 (latest) Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB
 
 This version works directly on video files. The documentation below is out of date (28.1.21). There is no need to do any processing of the video into images.
 

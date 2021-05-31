@@ -43,58 +43,10 @@ In summary, the indoor test resulted in a ~0.75 correlation with manually-observ
 
 ## Installation
 
+- [CAVAPA v1.0.81 Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB.
+- [CAVAPA v1.0.81 Windows Installer zip](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/Cavapa-v1.0.81.zip)
+
 <img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
-
-[CAVAPA version 1.0.81 (latest) Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB
-
-<!-- ## Quickstart
-
-CAVAPA processes video to produce a data-series that is a measure of the amount of physical activity of persons in the video. To begin, check for interlacing by pausing the video: 
-
-1. Are there [horizontal bands that indicate interlacing](#interlaced_video) video compression is used?<br>
-Use FFmpeg to convert the video to use a non-interlaced compression:<br>
- `ffmpeg -i video_interlaced.mp4 -vf yadif=parity=auto video_out.mp4`
-1. Convert video to image frames using ffmpeg.<br>
- `ffmpeg -i video.mpg -q:v 1 -qmin 1 -qmax 1 ./frames/video-%06d.jpg`
-1. Run CAVAPA. It will process the images and create movement images and a CSV data file (containing the movement-measure for each frame of the video).<br>
- `cavapa -i ./frames -o ./cavapa_output`
-1. Optionally, convert the CAVAPA output images into a video using FFmpeg.<br>
- `ffmpeg -i ./cavapa_output/movement-%06d.jpg movement.mp4`
-
-## Command-line Arguments
-
-The `cavapa.exe` application expects the following arguments. Only the `input folder` parameter is required (all other parameters have defaults and are therefore optional).
-
-| Arg | Type (default) | Description |
-| --- | -------------- | ----------- |
-| --help, -h | | produce help message |
-| * --inputFolder, -i | `string` | input folder containing JPG files of video frames |
-| --outputFolder, -o | `string` | output folder (optional) |
-| --debugFolder, -t | `string` | debug output folder (optional) |
-| --dbgOutInterval, -u | `int` (0) | number of frames skipped between debug output |
-| --bgThreshold, -g | `float` (48.0f) | used to identify tracked pixels, lower values will be noisier |
-| --parallelChunkSize, -p | `int` (128) | the number of files processed in parallel |
-| --blurIterations, -b | `int` (0) | number of times the blur is applied |
-| --csvDataFilenameOut, -d | `string` ("data.csv") | output CSV data filename (path) |
-
-## Technical Summary
-
-CAVAPA is a command-line executable that is written in C++ for Microsoft Windows™. CAVAPA uses the following software libraries: [Microsoft Parallel Patterns Library (PPL)](https://docs.microsoft.com/en-us/cpp/parallel/concrt/parallel-patterns-library-ppl?view=msvc-172), [Boost C++ 1.72](https://www.boost.org/) (`boost::filesystem`, and `boost::program_options`), [Free Image](https://freeimage.sourceforge.io) & [Free Image Plus](https://freeimage.sourceforge.io). The source code is a single file that is compiled using Microsoft Visual Studio (2019). System libraries from the Windows 10 SDK (10.0.17763.0) use the v142 platform toolset. The git repository contains [additional projects](#additional_projects_in_github) for charting in C# and processing accelerometer data. The source code is freely available (open source) for use and modification. It has been structured for simplicity and performance.
-
-## Build Set-up
-
-Compilation of the CAVAPA binary/executable requires that the following environment variables are properly set: `FREEIMAGEDIR`, `BOOSTDIR`.
-
-## Additional Projects in GitHub
-
-The [GitHub code repository](https://github.com/gregruthenbeck/cavapa/) contains the following projects.
-
-| Project | Type | Description |
-| ------- | ---- | ----------- |
-| Cavapa | `C#` | The main CAVAPA application |
-| CavapaInstaller | `C#` | The setup (.msi) application |
-
-All of the projects can be opened from the Visual Studio Solution file `Cavapa.sln`. -->
 
 ## Video Pre-Processing
 

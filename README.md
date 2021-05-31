@@ -44,7 +44,7 @@ In summary, the indoor test resulted in a ~0.75 correlation with manually-observ
 ## Installation
 
 - [CAVAPA v1.0.81 Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB.
-- [CAVAPA v1.0.81 Windows Installer zip](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/Cavapa-v1.0.81.zip)
+- [CAVAPA v1.0.81 Windows Installer zip](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/Cavapa-v1.0.81.zip) 51.9MB.
 
 <img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 

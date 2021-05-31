@@ -36,7 +36,7 @@ We are in the process of publishing details of a study in which CAVAPA results a
 
 CAVAPA has been compared with other methods of estimating/measuring physical-activity-levels for an indoor and an outdoor video. The data analyses were conducted using a Python [Jupyter Notebook](https://jupyter.org/). The data-analyses compare manually-observed scoring, accelerometers, hear-rate monitors, with CAVAPA output.
 
-- CAVAPA Validation Data Analysis [source code on GitHub](https://github.com/gregruthenbeck/cavapa-data)
+- CAVAPA Validation Data Analysis [CSV data & code on GitHub](https://github.com/gregruthenbeck/cavapa-data)
 - CAVAPA Validation Data Analysis live Jupyter Notebook [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/gregruthenbeck/cavapa-data/HEAD?filepath=cavapa_data_jupyter_notebook.ipynb) on [binder.org](https://binder.org))
 
 In summary, the indoor test resulted in a ~0.75 correlation with manually-observed scores of physical activity, and the outdoor test a ~0.65 correlation. A subjective "eye-balling" of the time-series shows that physical-activity is measured by CAVAPA and is arguably better than manual observation (much easier and could actually be more accurate than other measures).
@@ -46,8 +46,6 @@ In summary, the indoor test resulted in a ~0.75 correlation with manually-observ
 <img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 
 [CAVAPA version 1.0.81 (latest) Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB
-
-This version works directly on video files. The documentation below is out of date (28.1.21). There is no need to do any processing of the video into images.
 
 <!-- ## Quickstart
 

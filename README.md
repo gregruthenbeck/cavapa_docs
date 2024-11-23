@@ -1,8 +1,8 @@
 <h1 align="center">
-<img src="docs/images/icon.svg" alt="CAVAPA Icon" width="80" style="margin-left: 32px;"><br>
+<img src="https://cavapa.ruthenbeck.io/images/icon.svg" alt="CAVAPA Icon" width="80" style="margin-left: 32px;"><br>
 <b>CAVAPA</b><br>
 Measure the Motion of Groups from Video<br>
-<img src="docs/images/cavapa.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
+<img src="https://cavapa.ruthenbeck.io/images/cavapa.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 </h1>
 
 [![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/gregruthenbeck/cavapa_docs/blob/master/LICENSE)
@@ -46,7 +46,7 @@ In summary, the indoor test resulted in a ~0.75 correlation with manually-observ
 - [CAVAPA v1.0.81 Windows Installer msi](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/CavapaInstaller-v1.0.81.msi) 56.7MB.
 - [CAVAPA v1.0.81 Windows Installer zip](https://github.com/gregruthenbeck/cavapa/releases/download/v1.0.81/Cavapa-v1.0.81.zip) 51.9MB.
 
-<img src="images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
+<img src="https://cavapa.ruthenbeck.io/images/cavapa2.png" alt="CAVAPA screenshot" style="padding-top: 0.5rem;">
 
 ## Video Pre-Processing
 
@@ -60,7 +60,7 @@ Many video cameras use interlaced video compression codecs. This will reduce the
 ffmpeg -i input.mp4 -vf yadif=parity=auto output.mp4
 ```
 
-| <img src="images/ball_drop_interlace_stripes.png" alt="interlacing striping" style="height:200px;"/> | <img src="images/ball_drop_de-interlaced.png" alt="de-interlaced" style="height:200px;"/> |
+| <img src="https://cavapa.ruthenbeck.io/images/ball_drop_interlace_stripes.png" alt="interlacing striping" style="height:200px;"/> | <img src="images/ball_drop_de-interlaced.png" alt="de-interlaced" style="height:200px;"/> |
 | ----------------------------------------------------- | ----------------------------------- |
 | Interlacing causes striping                              | Properly decoded de-interlaced frame |
 
@@ -101,7 +101,7 @@ ffmpeg -i ./cavapa_frames/my_video_%06d.jpg my_video.mp4 -loglevel error
 
 ### Combining Videos Side-by-Side
 
-![CAVAPA Screenshot](images/cavapa.png)
+![CAVAPA Screenshot](https://cavapa.ruthenbeck.io/images/cavapa.png)
 
 Test videos can be generated that show the input video alongside the CAVAPA-processed video.
 
